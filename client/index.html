@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#112622">
+  <meta name="description" content="Formation analysis and match records for Birkenhead 1907 and the MFL clubs.">
+  <title>MFL Results</title>
+  <script src="/theme.js"></script>
+  <link rel="stylesheet" href="/app.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to analysis</a>
+  <header class="topbar">
+    <div class="header-inner">
+      <a class="brand" href="#matrix" aria-label="MFL Results, counter matrix">
+        <span class="brand-mark" aria-hidden="true"><i></i></span>
+        <span>MFL Results<small>Match analysis</small></span>
+      </a>
+      <nav id="nav" aria-label="Analysis views">
+        <a href="#matrix" data-view="matrix">Counter matrix</a>
+        <a href="#picker" data-view="picker">Formation picker</a>
+        <a href="#matchups" data-view="matchups">Matchups</a>
+        <a href="#matches" data-view="matches">Matches</a>
+      </nav>
+      <div class="header-actions">
+        <button class="button secondary theme-toggle" type="button" id="theme-toggle" aria-label="Dark mode" aria-pressed="false">
+          <span>Dark<span class="compact-hide"> mode</span></span>
+          <span class="theme-track" aria-hidden="true"></span>
+        </button>
+        <button class="button primary top-import" data-action="import" aria-label="Import matches">
+          <span class="import-icon" aria-hidden="true">+</span><span>Import<span class="compact-hide"> matches</span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div id="app"><p class="loading" role="status">Loading the match database…</p></div>
+  </main>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
