@@ -1,0 +1,14 @@
+{
+  "name": "mfl-results",
+  "main": "dist/server/index.js",
+  "compatibility_date": "2026-05-01",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "mfl-results",
+      // Use the ID of your D1 database when deploying to Cloudflare.
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "drizzle"
+    }
+  ]
+}
