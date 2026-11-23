@@ -1,0 +1,20 @@
+{
+  "name": "mfl-results",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "db:local": "wrangler d1 migrations apply DB --local",
+    "db:remote": "wrangler d1 migrations apply DB --remote",
+    "dev": "node scripts/local-password.mjs && npm run build && npm run db:local && wrangler dev --local --ip 127.0.0.1",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "dependencies": {
+    "read-excel-file": "6.0.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "wrangler": "4.165.0"
+  }
+}
